@@ -1,272 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - TechNova Solutions</title>
-    <style>
-      :root {
-        --navy: #0b2140;
-        --blue: #1d5fd6;
-        --bg-light: #f5f7fa;
-        --bg-section: #eef1f5;
-        --text-dark: #111827;
-        --text-body: #4b5563;
-        --border: #e5e7eb;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family:
-          "Segoe UI",
-          -apple-system,
-          BlinkMacSystemFont,
-          sans-serif;
-        color: var(--text-dark);
-        background: #fff;
-        line-height: 1.6;
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      .container {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0 24px;
-      }
-      header {
-        background: var(--bg-light);
-        border-bottom: 1px solid var(--border);
-      }
-      .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 24px;
-        max-width: 1280px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-      .logo {
-        font-size: 22px;
-        font-weight: 800;
-        color: var(--blue);
-      }
-      .nav-links {
-        display: flex;
-        gap: 32px;
-        align-items: center;
-      }
-      .nav-links a {
-        color: #374151;
-        font-size: 15px;
-      }
-      .nav-links a.active {
-        color: var(--text-dark);
-        font-weight: 600;
-        border-bottom: 2px solid var(--blue);
-        padding-bottom: 4px;
-      }
-      .btn-quote {
-        background: var(--navy);
-        color: #fff;
-        padding: 12px 22px;
-        border-radius: 8px;
-        font-weight: 600;
-        font-size: 14px;
-        white-space: nowrap;
-      }
-      .hero {
-        background: var(--bg-light);
-        padding: 80px 0 100px;
-      }
-      .hero-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-        align-items: center;
-      }
-      .hero h1 {
-        font-size: 48px;
-        font-weight: 800;
-        line-height: 1.2;
-        margin-bottom: 24px;
-      }
-      .hero h1 .accent {
-        background: linear-gradient(90deg, #1d5fd6, #3b82f6);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
-      .hero p {
-        color: var(--text-body);
-        font-size: 16px;
-        max-width: 520px;
-      }
-      .contact-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        margin-top: 40px;
-      }
-      .contact-card,
-      .contact-form {
-        background: #fff;
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 40px;
-      }
-      .contact-card h2,
-      .contact-form h2 {
-        margin-bottom: 18px;
-      }
-      .contact-card p {
-        color: var(--text-body);
-        margin-bottom: 18px;
-      }
-      .contact-item {
-        display: grid;
-        gap: 10px;
-        margin-bottom: 22px;
-      }
-      .contact-item span {
-        font-weight: 700;
-      }
-      .contact-form label {
-        display: block;
-        margin-bottom: 8px;
-        font-size: 14px;
-      }
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 14px 16px;
-        font-size: 15px;
-        color: var(--text-dark);
-        background: #f9fafb;
-      }
-      .contact-form textarea {
-        resize: vertical;
-        min-height: 180px;
-      }
-      .contact-form button {
-        margin-top: 12px;
-        background: var(--blue);
-        color: #fff;
-        border: none;
-        padding: 14px 24px;
-        border-radius: 14px;
-        cursor: pointer;
-        font-weight: 600;
-      }
-      footer {
-        padding: 40px 0;
-      }
-      .footer-grid {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-      .footer-brand p {
-        color: var(--text-body);
-      }
-      @media (max-width: 900px) {
-        .hero-grid,
-        .contact-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">TechNova Solutions</div>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html" class="active">Contact</a>
-        </nav>
-        <a href="#" class="btn-quote">Get a Quote</a>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova Solutions - Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h1>Ready to build your next digital solution?</h1>
-          <p>
-            Reach out to TechNova Solutions and let’s discuss how we can help
-            your business scale with secure, innovative software and cloud
-            solutions.
-          </p>
-        </div>
-        <div class="contact-card">
-          <h2>Contact Information</h2>
-          <div class="contact-item">
-            <span>Office</span>
-            <p>123 Innovation Avenue, Suite 400<br />Metropolis, CA 94107</p>
-          </div>
-          <div class="contact-item">
-            <span>Email</span>
-            <p>hello@technova.com</p>
-          </div>
-          <div class="contact-item">
-            <span>Phone</span>
-            <p>+1 (555) 123-4567</p>
-          </div>
-        </div>
-      </div>
+<header>
+  <div class="nav-wrap">
+    <div class="brand">
+      <div class="brand-logo">TN</div>
+      TechNova Solutions
+    </div>
+    <nav class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <button class="cta-btn">Get a Quote</button>
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    </div>
+  </div>
+</header>
 
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-form">
-            <h2>Send a Message</h2>
-            <form>
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" />
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="you@example.com" />
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="How can we help?"></textarea>
-              <button type="button">Submit Request</button>
-            </form>
-          </div>
-          <div class="contact-card">
-            <h2>Why Work With Us</h2>
-            <p>
-              TechNova Solutions combines enterprise-grade security, cloud
-              scalability, and bespoke software craftsmanship with a
-              client-first partnership approach.
-            </p>
-            <div class="contact-item">
-              <span>Fast response</span>
-              <p>We reply within one business day.</p>
-            </div>
-            <div class="contact-item">
-              <span>Tailored solutions</span>
-              <p>Custom workflows aligned to your goals.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="page-header">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p>Have a question or want to start a project? Send us a message and our team will get back to you.</p>
+  </div>
+</section>
 
-    <footer>
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <div class="logo">TechNova Solutions</div>
-          <p>© 2024 TechNova Solutions. All rights reserved.</p>
-        </div>
+<section class="contact-section">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Reach out to us directly, or fill out the form and we will respond within one business day.</p>
+      <ul>
+        <li>&#128231; Email: hello@technova-solutions.com</li>
+        <li>&#128222; Phone: +1 (555) 123-4567</li>
+        <li>&#128205; Address: 123 Innovation Ave, Tech City</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">TechNova Solutions</div>
+      <div class="footer-links">
+        <h4>Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="footer-bottom">&copy; 2024 TechNova Solutions. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
