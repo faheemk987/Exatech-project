@@ -1,4 +1,3 @@
-// Simple mobile menu toggle used on every page
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.getElementById("menuToggle");
   var nav = document.getElementById("navLinks");
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Simple contact form handler (contact.html only)
   var form = document.getElementById("contactForm");
   var msg = document.getElementById("formMsg");
 
